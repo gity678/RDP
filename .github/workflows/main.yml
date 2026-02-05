@@ -27,8 +27,8 @@ jobs:
 
       - name: Create RDP User with Simple Password
         run: |
-          # تحديد كلمة المرور لتكون ثابتة وبسيطة
-          $password = "1234"
+          # تم تغيير كلمة المرور لـ P@ssw0rd123 لتجاوز قيود أمان ويندوز
+          $password = "P@ssw0rd123"
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
           
           # إنشاء المستخدم وتعيين الصلاحيات
